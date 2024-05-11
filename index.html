@@ -26,7 +26,6 @@ border-radius: 5px;
 <option value="3">3</option>
 <option value="4">4</option>
 <option value="5">5</option>
-<!-- Add more options as needed -->
 </select>
 
 <button id="startBtn">Start</button>
@@ -38,43 +37,32 @@ border-radius: 5px;
 <option value="slow">Slow</option>
 <option value="medium">Medium</option>
 <option value="fast">Fast</option>
-<!-- Add more options as needed -->
 </select>
 </div>
 
-<!-- Rest of your HTML content -->
 <script src="js/Drag.js"></script>
 <script src="js/hanoi.js"></script>
 
 
 <script>
-// Get references to the buttons
 const startBtn = document.getElementById('startBtn');
 const pauseBtn = document.getElementById('pauseBtn');
 const resumeBtn = document.getElementById('resumeBtn');
 
-// Add event listeners to the buttons
 startBtn.addEventListener('click', startGame);
 pauseBtn.addEventListener('click', pauseGame);
 resumeBtn.addEventListener('click', resumeGame);
 
-// Define functions to handle button clicks
 function startGame() {
-// Implement the logic to start the game
 console.log('Game started');
-// You may call your game start function here
 }
 
 function pauseGame() {
-// Implement the logic to pause the game
 console.log('Game paused');
-// You may call your game pause function here
 }
 
 function resumeGame() {
-// Implement the logic to resume the game
 console.log('Game resumed');
-// You may call your game resume function here
 }
 </script>
 </body>
