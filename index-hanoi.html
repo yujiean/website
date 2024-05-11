@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tower of Hanoi Game</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.cls1 {color: purple}
+.layer {
+position: absolute;
+background-color: orange;
+border-radius: 5px;
+}
+</style>
+<style id="dynamic">
+@keyframes diskmove {
+0% {left: 100px; top: 200px}
+100% {left: 400px; top: 500px}
+}
+</style>
+</head>
+<body>
+<div>
+<label for="diskCount">Select Number of Disks:</label>
+<select id="diskCount">
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+</select>
+
+<button id="startBtn">Start</button>
+<button id="pauseBtn">Pause</button>
+<button id="resumeBtn">Resume</button>
+
+<label for="moveSpeed">Select Move Speed:</label>
+<select id="moveSpeed">
+<option value="slow">Slow</option>
+<option value="medium">Medium</option>
+<option value="fast">Fast</option>
+</select>
+</div>
+
+<script src="js/Drag.js"></script>
+<script src="js/hanoi.js"></script>
+
+
+<script>
+const startBtn = document.getElementById('startBtn');
+const pauseBtn = document.getElementById('pauseBtn');
+const resumeBtn = document.getElementById('resumeBtn');
+
+startBtn.addEventListener('click', startGame);
+pauseBtn.addEventListener('click', pauseGame);
+resumeBtn.addEventListener('click', resumeGame);
+
+function startGame() {
+console.log('Game started');
+}
+
+function pauseGame() {
+console.log('Game paused');
+}
+
+function resumeGame() {
+console.log('Game resumed');
+}
+</script>
+</body>
+</html>
